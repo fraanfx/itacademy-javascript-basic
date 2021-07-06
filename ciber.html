@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="calcularNota()">Calcular nota</button>
+   
+
+   
+   <script>
+        console.log("Hola mundo");
+        alert("¡Me llamo Fran!");
+        let name = "Fran";
+        let surname = "Ariño";
+        console.log(`${name} ${surname}`);
+        let num1 = 34;
+        let num2 = 56;
+        console.log("La suma entre "+ num1 +" i "+ num2 + " es "+(num1+num2));  
+        function calcularNota() {
+            let nota = (Math.floor(Math.random()*100)/10);
+            
+             if (nota < 5){
+                alert(`Ohh has suspendido con un ${nota}`)
+             }
+             else{
+                alert(`Ohh has aprobado con un ${nota}`)
+             }
+        }
+
+        let frase = "Tinc un cotxe de color blau";
+        console.log(frase);
+        console.log(frase.replace("blau","verd"));
+        console.log(frase.replaceAll("o","u"));
+        let objectes = ["taula", "cadira", "ordinador", "llibreta"]
+
+        for(let i = 0; i <= objectes.length -1; i++){
+            console.log(`L'objecte ${objectes[i]} esta a la posició ${i+1}.`);
+
+        }
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>
